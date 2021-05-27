@@ -11,8 +11,7 @@ body{
     display: flex;
     justify-content: space-between;
     max-width: 1428px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 .logo{
     padding: 32px 0 0;
@@ -266,7 +265,7 @@ button{
     background-color: #F2F2F2;
     border-radius: 30px;
     margin-right: 30px;
-    width: 100%;
+    min-width: 70%;
 }
 .hosting-title{
     padding: 32px 32px 32px;
@@ -284,7 +283,7 @@ button{
     margin: 0 12px 30px;
     border-radius: 15px;
     background-color: #fff;
-    box-shadow: 6px 6px 6px  #cac9c9;
+    box-shadow: 6px 6px 6px #cac9c9;
     transform: scale(1);
     transition: all 100ms;
 }
@@ -350,7 +349,7 @@ button{
 .hosting-popular__marseille-modifier{
     display: flex;
     border-radius: 15px;
-    padding: 6px 6px 4px 6px;
+    padding: 6px 6px 2px 6px;
     margin: 0 12px 30px;
     background-color: #fff;
     box-shadow: 6px 6px 6px  #cac9c9;
@@ -360,16 +359,19 @@ button{
 .hosting-popular__marseille-modifier:hover{
     transform: scale(1.03);
 }
+.popular-images {
+    width: 25%;
+    min-width: 40%;
+}
 .popular-images img{
-    min-width: 70px;
-    width: 120px;
+    width: 100%;
     height: 140px;
     border-radius: 10px 0px 0 10px;
     object-fit: cover;
     cursor: pointer;
 }
 .popular{
-    width: 160px;
+    width: 75%;
 }
 .subtitle-marseille__popular{
     font-size: 16px;
@@ -378,7 +380,7 @@ button{
 }
 .paragraphe-price__popular{
     font-size: 14px;
-    padding: 5px 10px 40px;
+    padding: 5px 10px 20px;
 }
 .iconstar-02{
     color: #F2F2F2;
@@ -459,7 +461,6 @@ button{
     font-weight: bold;
     border-radius: 0 0 30px 30px;
     box-shadow: 6px 6px 6px  #cac9c9;
-    
 }
 
 /** footer ***/
@@ -473,7 +474,6 @@ button{
 }
 .about{
     padding: 20px 32px 0;
-    max-width: 100%;
     width: 50%;
 }
 .about .title_about{
@@ -501,7 +501,6 @@ li{
 
 @media screen and (max-width: 1190px){
     .hosting{
-        display: flex;
         flex-direction: column-reverse;
     }
     .hosting-marseille{
@@ -559,6 +558,19 @@ li{
     }
 }
 @media screen and (max-width: 700px){
+    .hosting{
+        padding: 0;
+    }
+    .hosting-marseille{
+        background: none;
+        width: 100%;
+    }
+    .hosting-marseille__articles--modifier{
+        box-shadow: 2px 4px 4px 4px #f1f1f1;
+    }
+    .hosting-popular{
+        border-radius: 0;
+    }
     .footer{
         display: flex;
         flex-direction: column;
