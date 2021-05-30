@@ -10,8 +10,8 @@ L'obejctif est de permettre aux utilisateurs de trouver un logement et des activ
 - La maquettes desktop et mobiles du site Reservia,
 - Les couleurs: #DEEBFF, #0065FC, #F2F2F2,
 - La police du site est "Raleway",
-- Les icônes proviennent de la bibliothèque "Font Awesome".
-
+- Les icônes proviennent de la bibliothèque "Font Awesome",
+- Les imganes livrés en format small, medium, large, x_large.
 
 
 
